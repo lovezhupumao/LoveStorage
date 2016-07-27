@@ -1,0 +1,47 @@
+|--libs
+|  |---lite-orm-1.8.1.jar 引用的第三方数据库
+|--src
+|  |--androidTest 测试目录(不需要管)
+|  |--main
+|  |   |--java 源代码
+|  |   |  |--com
+|  |   |  |  |--zpm
+|  |   |  |     |--sql
+|  |   |  |	   |--DbSql.java                          初始化数据库
+|  |   |  |	   |--Params.java                         一些参数常量，如刷新时间、刷新方式等
+|  |   |  |	   |--SqlDataModel.java                   定义表的字段和属性
+|  |   |  |--train
+|  |   |  |  |--com
+|  |   |  |     |--lovestorage
+|  |   |  |        |--AboutActivity.java                  “关于”界面activity代码
+|  |   |  |        |--CombineView.java                    组合控件代码
+|  |   |  |        |--Contants.java                       工程常量
+|  |   |  |        |--DetailActivity.java                 “详细”界面activity代码
+|  |   |  |        |--EditActivity.java                   “编辑”界面activity代码
+|  |   |  |        |--ExpandableListViewAdapter.java      扩展list适配器
+|  |   |  |        |--HistoryActivity.java                “历史”界面activity代码
+|  |   |  |        |--MainActivity.java                   “解锁”界面activity代码
+|  |   |  |        |--PasswordUtil.java                   密码工具类
+|  |   |  |        |--SecondActivity.java                 修改密码界面
+|  |   |  |        |--SelfSetupReceiver.java              手机开机自启动代码
+|  |   |  |        |--SettingActivity.jav                “ 设置”界面activity代码
+|  |   |  |        |--TimerWidgetService.java             定时器刷新服务
+|  |   |  |        |--WidgetProvider.java                 桌面挂件代码
+|  |   |  |        |--WriteActivity.java                  解锁后主界面activity代码
+|  |   |--res 资源文件
+|  |   |  |--drawable 图片文件夹
+|  |   |  |--layout布局文件夹
+|  |   |  |  |--activity_about.xml                        “关于”界面布局文件
+|  |   |  |  |--activity_detail.xml                       “详细”界面布局文件
+|  |   |  |  |--activity_edit.xml                         “编辑”界面布局文件
+|  |   |  |  |--activity_history.xml                      “历史”界面布局文件
+|  |   |  |  |--activity_main.xml                         “解锁”界面布局文件
+|  |   |  |  |--activity_second.xml                       “修改密码”界面布局文件
+|  |   |  |  |--activity_setting.xml                      “设置”界面布局文件
+|  |   |  |  |--activity_write.xml                        “解锁后”界面布局文件
+|  |   |  |  |--header_just_username.xml                  “侧滑菜单”界面布局文件
+|  |   |  |  |--view_combine.xml                          “复合”界面布局文件
+|  |   |  |  |--view_expandable_child.xm                  “扩展list父”界面布局文件
+|  |   |  |  |--view_expandable_parent.xml                “扩展list字”界面布局文件
+|  |   |  |  |--view_widget.xml                           “桌面挂件”界面布局文件
+|  |   |--AndroidManifest.xml 工程清单文件|

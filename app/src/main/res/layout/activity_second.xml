@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="train.zpm.com.lovestorage.SecondActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightyellow"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:id="@+id/second_text"
+        android:background="@color/lightyellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.leo.gesturelibray.view.CustomLockView
+        android:id="@+id/second_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/lightyellow"
+        app:color_error_ring="#e91515"
+        app:color_on_ring="#64a460"
+        app:color_up_ring="#3ce915"
+        app:inner_background_width="19dp"
+        app:inner_ring_width="14dp"
+        app:outer_ring_spacing_width="50dp" />
+
+</LinearLayout>

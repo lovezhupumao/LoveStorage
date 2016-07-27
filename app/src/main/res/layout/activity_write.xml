@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:fitsSystemWindows="true"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/colorAccent"
+        android:src="@drawable/lady" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <train.zpm.com.lovestorage.CombineView
+                    android:id="@+id/main_begin"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btnstyle_yellow"
+                    android:gravity="center"
+                    app:imagebg="@drawable/edit"
+                    app:textcontext="事件记录" />
+
+                <train.zpm.com.lovestorage.CombineView
+                    android:id="@+id/main_history"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btnstyle_green"
+                    android:gravity="center"
+                    app:imagebg="@drawable/read"
+                    app:textcontext="往事查阅" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <train.zpm.com.lovestorage.CombineView
+                    android:id="@+id/main_table"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btnstyle_blue"
+                    android:gravity="center"
+                    app:imagebg="@drawable/setting"
+                    app:textcontext="挂件设置" />
+
+                <train.zpm.com.lovestorage.CombineView
+                    android:id="@+id/main_setting"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btnstyle_dark"
+                    android:gravity="center"
+                    app:imagebg="@drawable/about"
+                    app:textcontext="关于软件" />
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

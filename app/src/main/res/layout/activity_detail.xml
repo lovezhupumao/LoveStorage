@@ -1,0 +1,43 @@
+<!--
+详细界面布局：有3个textview控件
+采用LinearLayout，orientation设为vertical，里面包含3个TextView
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="train.zpm.com.lovestorage.DetailActivity">
+    <!--
+        id控件id
+        layout_width控件宽度
+        layout_height控件高度
+        gravity="center"控件文字显示位置
+        text="开发者：XXX" 控件显示文字
+        textSize文字大小-->
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:id="@+id/detail_head"
+        android:textSize="32sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:id="@+id/detail_time"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/detail_content"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corner_square"/>
+</LinearLayout>
